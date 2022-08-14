@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blogging Like a Hacker
+author: sparks
 ---
 <!DOCTYPE html>
 <html>
@@ -11,5 +12,13 @@ title: Blogging Like a Hacker
 		<h1>Welcome to Spark's Website</h1>
 		<hr />
 		<p>The website is work in progress, please make sure to visit again after it's completed to blow your minds off.</p>
+		<ul>
+			<li>Site address is {{ site.url }}</li>
+			<li> SIte pages are {{ site.pages }}</li>
+			<li>Title is {{ page.title }}</li>
+			<li>Authored by {{ page.author }}</li>
+			<li>Time of site is {{ site.time }}</li>
+			<li>Date of page is {{ page.date }}</li>
+			<li>Name of page is {{ page.name }}</li>		
 	</body>
 </html>
